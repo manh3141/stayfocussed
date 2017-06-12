@@ -2,12 +2,15 @@ import json
 import requests
 import time
 import urllib
+import signal
+import sys
+import time
 
 
 TOKEN = "386823692:AAFGIZvCUw7AVXIhxLICHIjeLNetgeO3mfw"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 professors = [164399314]
-students = [264043624]
+students = [264043624, 11796418, 110690548]
 break_requests = []
 
 def get_url(url):
@@ -27,6 +30,12 @@ def get_updates(offset=None):
     js = get_json_from_url(url)
     return js
 
+def get_last_update_id(updates):
+    update_ids = []
+    for update in updates["result"]:
+        update_ids.append(int(update["update_id"]))
+    return max(update_ids)
+         
 def get_last_chat_id_and_text(updates):
     num_updates = len(updates["result"])
     last_update = num_updates - 1
@@ -44,20 +53,16 @@ def send_message(text, chat_id, reply_markup=None):
 def send_message_to_all(text, reply_markup=None):
     text = urllib.parse.quote_plus(text)
     chat_ids = professors + students
-    print (chat_ids)
     for i in chat_ids:
         url = URL + "sendMessage?text={}&chat_id={}&parse_mode=Markdown".format(text, i)
         if reply_markup:
             url += "&reply_markup={}".format(reply_markup)
         get_url(url)
+        
+def toggle_button():
+    info = {"entity_id": "input_boolean.breakrequest"}
+    r = requests.post("http://192.168.1.135:8123/api/services/input_boolean/toggle", json=info)
     
-def get_last_update_id(updates):
-    update_ids = []
-    for update in updates["result"]:
-        update_ids.append(int(update["update_id"]))
-    return max(update_ids)
-    
-            
 def build_keyboard():
     #keyboard = [[item] for item in items]
     keyboard = ['breakrequest']
@@ -75,6 +80,7 @@ def handle_updates(updates):
                 if user in break_requests:
                     send_message("already requested break earlier", chat)
                 else:
+                    toggle_button()
                     send_message("break requested", chat)
                     break_requests.append(user)
                     print(break_requests)
@@ -91,19 +97,6 @@ def handle_updates(updates):
             else:
                 send_message("cannot process this message. please use /break to request a break", chat)
                 print()
-            #if text == "/done":
-            #    keyboard = build_keyboard(items)
-            #    send_message("Select an item to delete", chat, keyboard)
-            #elif text in items:
-            #    db.delete_item(text)
-            #    items = db.get_items()
-            #    keyboard = build_keyboard(items)
-            #    send_message("Select an item to delete", chat, keyboard)
-            #else:
-            #    db.add_item(text)
-            #    items = db.get_items()
-            #    message = "\n".join(items)
-            #    send_message(message, chat)
         except Exception as e:
                 print(e)
     
@@ -117,8 +110,7 @@ def main():
         if len(updates["result"]) > 0:
             last_update_id = get_last_update_id(updates) + 1
             handle_updates(updates)
-        time.sleep(1.0)
-
+        time.sleep(1)
         
 if __name__ == '__main__':
-    main()
+        main()
