@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var requestBtn = document.getElementById("requestBtn");
 	var timerLbl = document.getElementById("timer");
 	var timeDisabled = 5400000; //in milliseconds
+	var dueTo = null;
 			
 	// Disable button if break request is not ready
 	if(localStorage.getItem("storedTimestamp") !== null){
@@ -14,7 +15,10 @@ $(document).ready(function(){
 			$(requestBtn).attr("disabled", true);
 			
 			// Add timer
-			startTimer(localStorage.getItem("timer"), timerLbl);
+			if(localStorage.getItem("dueTo") !== null) {
+				var timeLeft = localStorage.getItem("dueTo") - Date.now();
+				startTimer(timeLeft / 1000, timerLbl);
+			}
 		} else {
 			// Enable button
 			$(requestBtn).attr("disabled", false);
@@ -38,6 +42,10 @@ $(document).ready(function(){
 		setTimeout(function() { enableSubmit(requestBtn) }, timeDisabled);
 		
 		// Display the amount of time until new break request can be sent
+		if(localStorage.getItem("dueTo") == null){
+			dueTo = Date.now() + timeDisabled;
+			localStorage.setItem("dueTo", dueTo);
+		}
 		startTimer(timeDisabled / 1000, timerLbl);
 	});
 });
@@ -63,13 +71,16 @@ function startTimer(duration, display) {
 		
 		// Display timer
         display.textContent = "Next request in: " + minutes + ":" + seconds + " min.";
-		localStorage.setItem("timer", timer);
-
+		//localStorage.setItem("timer", timer);
+		
         if (--timer < 0) {
 			// Remove timer
 			clearInterval(myTimer);
 			display.textContent = "";
-			localStorage.removeItem("timer");
+			//localStorage.removeItem("timer");
+			if(localStorage.getItem("dueTo") !== null){
+				localStorage.removeItem("dueTo");
+			}
 
 			// Refresh page
 			location.reload();
