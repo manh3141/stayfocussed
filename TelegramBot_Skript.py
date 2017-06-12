@@ -1,17 +1,21 @@
-import json 
+import json
 import requests
 import time
 import urllib
-import signal
-import sys
-import time
-
+import logging
 
 TOKEN = "386823692:AAFGIZvCUw7AVXIhxLICHIjeLNetgeO3mfw"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 professors = [164399314]
-students = [264043624, 11796418, 110690548]
+students = []
 break_requests = []
+
+logger = logging.getLogger('myapp')
+hdlr = logging.FileHandler('/Users/Julia/Documents/HHZ/Semester 2/Internet of Things/Hackathon/Python_Skript/logs/TelegramBot.log')
+formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+hdlr.setFormatter(formatter)
+logger.addHandler(hdlr) 
+logger.setLevel(logging.INFO)
 
 def get_url(url):
     response = requests.get(url)
@@ -42,6 +46,12 @@ def get_last_chat_id_and_text(updates):
     text = updates["result"][last_update]["message"]["text"]
     chat_id = updates["result"][last_update]["message"]["chat"]["id"]
     return (text, chat_id)
+
+def register(user_id):
+    students.append(user_id)
+
+def unregister(user_id):
+    students.remove(user_id)
 
 def send_message(text, chat_id, reply_markup=None):
     text = urllib.parse.quote_plus(text)
@@ -79,24 +89,51 @@ def handle_updates(updates):
             if text == "/break":
                 if user in break_requests:
                     send_message("already requested break earlier", chat)
+                    logger.info("A user tried to request a break. Request was denied due to existing request.")
                 else:
                     toggle_button()
                     send_message("break requested", chat)
                     break_requests.append(user)
-                    print(break_requests)
+                    logger.info("A user tried to request a break.")
             elif text == "/start_lecture":
                 if user in professors:
                     send_message_to_all("the lecture has started")
+                    logger.info("A professor started the lecture.")
                 else:
                     send_message("only professors are allowed to use this function", chat)
+                    logger.info("A student tried to start the lecture. Request was denied.")
             elif text == "/stop_lecture":
                 if user in professors:
                     send_message_to_all("the lecture has stopped")
+                    logger.info("A professor stopped the lecture.")
                 else:
                     send_message("only professors are allowed to use this function", chat)
+                    logger.info("A student tried to stop the lecture. Request was denied.")
+            elif text == "/register":
+                if user in students:
+                    send_message("you are already registered as a student", chat)
+                    logger.info("A student tried to register a second time. Request was denied.")
+                elif user in professors:
+                    send_message("you are already registered as a professor", chat)
+                    logger.info("A professor tried to register as a student. Request was denied.")
+                else:
+                    send_message("you are now registered as a student", chat)
+                    logger.info("A new student registered.")
+                    register(user)
+            elif text == "/unregister":
+                if user in students:
+                    unregister(user)
+                    send_message("you are no longer registered as a student. you will not receive further notifications", chat)
+                    logger.info("A student unregistered.")
+                elif user in professors:
+                    send_message("you are registered as a professor. you cannot unregister via this button", chat)
+                    logger.info("A professor tried to unregister as a student. Request was denied.")
+                else:
+                    send_message("you were not registered in the first place", chat)
+                    logger.info("Someone not registered tried to unregister. Request was denied.")
             else:
-                send_message("cannot process this message. please use /break to request a break", chat)
-                print()
+                send_message("invalid input. please use one of the commands found under /", chat)
+                logger.info("Invalid input.")
         except Exception as e:
                 print(e)
     
@@ -105,7 +142,7 @@ def main():
     last_update_id = None
     keyboard = build_keyboard()
     while True:
-        print("getting updates")
+        #print("getting updates")
         updates = get_updates(last_update_id)
         if len(updates["result"]) > 0:
             last_update_id = get_last_update_id(updates) + 1
