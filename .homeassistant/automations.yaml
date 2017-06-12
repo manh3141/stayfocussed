@@ -38,12 +38,7 @@
     entity_id: input_boolean.stopwatch
     state: "on"
   action:
-    service: notify.Telegram
-    data:
-      message: 'The lecture started. Let us know if you need a break.'
-      data:
-        keyboard:
-          - '/request_break'  
+    service: shell_command.start_lecture
          
 - id: breakrequesttelegram
   alias: Break request Telegram

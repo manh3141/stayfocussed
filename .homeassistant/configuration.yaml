@@ -70,6 +70,10 @@ input_boolean:
   breakrequest:
     name: breakrequest
     initial: off
+    
+shell_command:
+  start_lecture: 'python3 /home/homeassistant/.homeassistant/TelegramBot_Skript.py'
+  test: touch /tmp/hass-shell-command-test
  
 group: !include groups.yaml
 automation: !include automations.yaml
