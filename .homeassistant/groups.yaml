@@ -9,6 +9,13 @@ Room_125:
   - group.mysensors_125_A
   - group.mysensors_125_B
   - group.hue_125
+StayFocused:
+  name: StayFocused
+  view: true
+  entities:
+  - group.mysensors_125_A
+  - group.mysensors_125_B
+  - group.lecturemonitor
 Config:
   view: true
   icon: mdi:settings
@@ -61,10 +68,11 @@ systemmonitor:
   - sensor.ram_use
   - sensor.ram_free
   - sensor.since_last_boot
-room_125:
+
+lecturemonitor:
+  name: Lecture status
   entities:
-  - group.mysensors_125_a
-  - group.mysensors_125_b
-  - group.hue_125
-  name: Raum 125
-  view: true
+    - input_boolean.stopwatch
+    - sensor.stopwatch
+    - sensor.breakscore
+    - sensor.breakrequestcount

@@ -1,1 +1,57 @@
-[]
+- id: stopwatchstart
+  alias: Stopwatch start
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "on"
+  action:
+    - service: input_boolean.toggle
+      entity_id: input_boolean.timerdummy
+
+- id: stopwatchstop 
+  alias: Stopwatch stop
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: 'off'
+  action:
+    - service: input_boolean.toggle
+      entity_id: input_boolean.timerdummy
+       
+- id: stopwatchupdate         
+  alias: Stopwatch update
+  trigger:
+    platform: time
+    minutes: '/1'
+  condition:
+    condition: state
+    entity_id: input_boolean.stopwatch
+    state: 'on'
+  action:
+    service: input_boolean.toggle
+    entity_id: input_boolean.timerdummy
+     
+- id: lecturestart
+  alias: Lecture beginn notification
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "on"
+  action:
+    service: notify.Telegram
+    data:
+      message: 'The lecture started. Let us know if you need a break.'
+      data:
+        keyboard:
+          - '/request_break'  
+         
+- id: breakrequesttelegram
+  alias: Break request Telegram
+  trigger:
+    platform: event
+    event_type: telegram_command
+    event_data:
+      command: '/request_break'
+  action:
+    - service: input_boolean.toggle
+      entity_id: input_boolean.breakrequest

@@ -45,6 +45,32 @@ sun:
 light:
   platform: hue
 
+# Telegram integration
+telegram_bot:
+  - platform: polling
+    api_key: 352567399:AAFGLYjO_HdsBWSDL5TEEywE2fYo6UmVRew
+    allowed_chat_ids:
+      - 11796418
+      - 264043624
+
+# Definition of notification methods
+notify:
+  - name: Telegram
+    platform: telegram
+    chat_id: 11796418
+    
+# Switches on Dashboard
+input_boolean:
+  stopwatch:
+    name: Lecture
+    initial: off
+  timerdummy:
+    name: timerdummy
+    initial: off
+  breakrequest:
+    name: breakrequest
+    initial: off
+ 
 group: !include groups.yaml
 automation: !include automations.yaml
 sensor: !include sensors.yaml
