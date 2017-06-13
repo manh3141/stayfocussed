@@ -9,6 +9,7 @@ Room_125:
   - group.mysensors_125_A
   - group.mysensors_125_B
   - group.hue_125
+#Tab for StayFocused with sensors and the lecturemonitor card
 StayFocused:
   name: StayFocused
   view: true
@@ -68,7 +69,7 @@ systemmonitor:
   - sensor.ram_use
   - sensor.ram_free
   - sensor.since_last_boot
-
+#lecture monitor card with switch for lecture start, timer, break score and break request count
 lecturemonitor:
   name: Lecture status
   entities:

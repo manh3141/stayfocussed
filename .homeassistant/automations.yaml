@@ -1,3 +1,4 @@
+# Start timer when lecture has been started
 - id: stopwatchstart
   alias: Stopwatch start
   trigger:
@@ -8,6 +9,7 @@
     - service: input_boolean.toggle
       entity_id: input_boolean.timerdummy
 
+# Stop timer when lecture has been stopped
 - id: stopwatchstop 
   alias: Stopwatch stop
   trigger:
@@ -18,6 +20,7 @@
     - service: input_boolean.toggle
       entity_id: input_boolean.timerdummy
        
+# Update timer every minute
 - id: stopwatchupdate         
   alias: Stopwatch update
   trigger:
@@ -32,30 +35,73 @@
     entity_id: input_boolean.timerdummy
      
 # - id: lecturestart
-  # alias: Lecture begin notification
-  # trigger:
-    # platform: state
-    # entity_id: input_boolean.stopwatch
-    # state: "on"
-  # action:
-    # service: shell_command.start_lecture
+#   alias: Lecture beginn notification
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.stopwatch
+#     state: "on"
+#   action:
+#     service: shell_command.start_lecture
 
-- id: lecturestop
-  alias: Restart HA when Lecture stops
-  trigger:
-    platform: state
-    entity_id: input_boolean.stopwatch
-    state: "off"
-  action:
-    service: homeassistant.restart
+# Restart Home Assistant when lecture stops to reset the break request count
+#- id: lecturestop
+#  alias: Restart HA when Lecture stops
+#  trigger:
+#    platform: state
+#    entity_id: input_boolean.stopwatch
+#    state: "off"
+#  action:
+#    service: homeassistant.restart
          
-- id: breakrequesttelegram
-  alias: Break request Telegram
+#- id: breakrequesttelegram
+#  alias: Break request Telegram
+#  trigger:
+#    platform: event
+#    event_type: telegram_command
+#    event_data:
+#      command: '/request_break'
+#  action:
+#    - service: input_boolean.toggle
+#      entity_id: input_boolean.breakrequest
+
+# Send a notification to the Home Assistant Dashboard when break score reaches threshhold    
+- id: sendbreaknotification
+  alias: Send break notification based on score
   trigger:
-    platform: event
-    event_type: telegram_command
-    event_data:
-      command: '/request_break'
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 100
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 150
   action:
-    - service: input_boolean.toggle
-      entity_id: input_boolean.breakrequest
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "Time for a break!"
+      
+# Send a notification to the Home Assistant Dashboard when CO2 value reaches threshhold  
+- id: sendco2notification
+  alias: Send notification to open window based on CO2 in PPM
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.hhz_eg125_airquality_a_9_1
+    above: 900
+  action:
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "CO2 level is too high. Please open the window!"
+
+# Send a notification to the Home Assistant Dashboard when lux value reaches threshhold 
+- id: sendluxnotification
+  alias: Send notification to turn on the lights based on brightness in lux
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.hhz_eg125_light_b_10_0
+    below: 200
+  action:
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "It is too dark. Please turn on the lights!"

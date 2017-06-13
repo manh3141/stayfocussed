@@ -71,6 +71,7 @@ input_boolean:
     name: breakrequest
     initial: off
     
+# Command to execute Python script
 shell_command:
   start_lecture: 'python3 /home/homeassistant/.homeassistant/TelegramBot_Skript.py'
  

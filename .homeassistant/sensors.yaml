@@ -23,12 +23,14 @@
 - platform: time_date
   display_options:
     - 'time'
-      
+
+# counts how often the break request switch has been toggled
 - platform: statistics
   name: breakrequeststatistics
   friendly_name: Break requests statistics
   entity_id: input_boolean.breakrequest
 
+# Timer is started when lecture switch is toggled. Template displays minutes since stopwatch has been started
 - platform: template
   sensors:
     stopwatch:
@@ -47,6 +49,7 @@
         - automation.stopwatch_start
         - automation.stopwatch_update
         - automation.stopwatch_stop
+# Template calculates score based on time (+1/min), break requests (+5), brightness (+0/+10/+20) and air quality (+0/+25/+50)
     breakscore:
       friendly_name: "Break score"
       value_template: >
@@ -86,6 +89,7 @@
         - automation.stopwatch_start
         - automation.stopwatch_update
         - automation.stopwatch_stop
+# every break request toggles the "breakrequest" switch, breakrequeststatistics counts these toggles and displays the value
     breakrequestcount:
       friendly_name: Break request count
       value_template: > 
