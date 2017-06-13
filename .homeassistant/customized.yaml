@@ -17,7 +17,12 @@ sensor.weather_wind_speed:
 
 
 ### MySensors ###
-
+sensor.hhz_eg125_light_b_10_0:
+  friendly_name: 'Brightness'
+sensor.hhz_eg125_airquality_a_9_1:
+  friendly_name: 'Air quality'
+light.hue_color_lamp_2:
+  friendly_name: 'Break status'
 
 
 

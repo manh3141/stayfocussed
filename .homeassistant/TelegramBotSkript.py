@@ -10,12 +10,12 @@ global professors
 global students
 global break_requests
 
-professors = [164399314]
+professors = [164399314, 264043624]
 students = []
 break_requests = []
 
 logger = logging.getLogger('myapp')
-hdlr = logging.FileHandler('/Users/Julia/Documents/HHZ/Semester 2/Internet of Things/Hackathon/Python_Skript/logs/TelegramBot.log')
+hdlr = logging.FileHandler('/home/homeassistant/.homeassistant/logs/TelegramBot.log')
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
@@ -142,9 +142,9 @@ def handle_updates(updates):
                 if user in students:
                     send_message("you are already registered as a student", chat)
                     logger.info("A student tried to register a second time. Request was denied.")
-                #elif user in professors:
-                    #send_message("you are already registered as a professor", chat)
-                    #logger.info("A professor tried to register as a student. Request was denied.")
+                elif user in professors:
+                    send_message("you are already registered as a professor", chat)
+                    logger.info("A professor tried to register as a student. Request was denied.")
                 else:
                     send_message("you are now registered as a student", chat)
                     logger.info("A new student registered.")
@@ -186,15 +186,17 @@ def main():
             last_update_id = get_last_update_id(updates) + 1
             handle_updates(updates)
             time.sleep(1)
-        resp = requests.get("http://192.168.1.135:8123/api/states/input_boolean.stopwatch")
-        response = json.loads(resp.text)
-        if response['state'] == response1: 
-            pass
-        else:
-            response1 = response['state']
-            update = {'ok': True, 'result': [{'update_id': 0, 'message': {'message_id': 765, 'from': {'id': 0, 'first_name': 'J', 'language_code': 'de-DE'}, 'text': '/buttontoggled', 'chat': {'type': 'private', 'id': 0, 'first_name': 'J'}, 'date': 1497357549, 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 6}]}}]}
-            handle_updates(update)
-            
+        try:
+          resp = requests.get("http://192.168.1.135:8123/api/states/input_boolean.stopwatch")
+          response = json.loads(resp.text)
+          if response['state'] == response1: 
+              pass
+          else:
+              response1 = response['state']
+              update = {'ok': True, 'result': [{'update_id': 0, 'message': {'message_id': 765, 'from': {'id': 0, 'first_name': 'J', 'language_code': 'de-DE'}, 'text': '/buttontoggled', 'chat': {'type': 'private', 'id': 0, 'first_name': 'J'}, 'date': 1497357549, 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 6}]}}]}
+              handle_updates(update)
+        except:
+          pass
     
 if __name__ == '__main__':
         main()

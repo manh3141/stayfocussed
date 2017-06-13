@@ -9,14 +9,13 @@ Room_125:
   - group.mysensors_125_A
   - group.mysensors_125_B
   - group.hue_125
-#Tab for StayFocused with sensors and the lecturemonitor card
-StayFocused:
-  name: StayFocused
+#Tab for StayFocussed with sensors and the lecturemonitor card
+StayFocussed:
+  name: StayFocussed
   view: true
   entities:
-  - group.mysensors_125_A
-  - group.mysensors_125_B
   - group.lecturemonitor
+  - group.sensorsstayfocussed
 Config:
   view: true
   icon: mdi:settings
@@ -51,6 +50,12 @@ mysensors_125_B:
   - sensor.hhz_eg125_humidtemp_b_12_0
   - sensor.hhz_eg125_humidtemp_b_12_1
   - sensor.hhz_eg125_light_b_10_0
+sensorsstayfocussed:
+  name: Room 125 sensors
+  entities: 
+  - sensor.hhz_eg125_light_b_10_0
+  - sensor.hhz_eg125_airquality_a_9_1
+  - light.hue_color_lamp_2
 weather:
   name: Wetter
   entities:

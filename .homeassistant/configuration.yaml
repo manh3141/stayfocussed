@@ -44,20 +44,6 @@ sun:
 
 light:
   platform: hue
-
-# Telegram integration
-telegram_bot:
-  - platform: polling
-    api_key: 352567399:AAFGLYjO_HdsBWSDL5TEEywE2fYo6UmVRew
-    allowed_chat_ids:
-      - 11796418
-      - 264043624
-
-# Definition of notification methods
-notify:
-  - name: Telegram
-    platform: telegram
-    chat_id: 11796418
     
 # Switches on Dashboard
 input_boolean:
@@ -70,11 +56,7 @@ input_boolean:
   breakrequest:
     name: breakrequest
     initial: off
-    
-# Command to execute Python script
-shell_command:
-  start_lecture: 'python3 /home/homeassistant/.homeassistant/TelegramBot_Skript.py'
- 
+     
 group: !include groups.yaml
 automation: !include automations.yaml
 sensor: !include sensors.yaml

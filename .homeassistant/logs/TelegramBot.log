@@ -1,0 +1,51 @@
+2017-06-07 00:33:40,310 INFO A user tried to request a break.
+2017-06-07 00:33:40,560 INFO A new student registered.
+2017-06-07 00:36:16,644 INFO A user tried to request a break.
+2017-06-07 00:36:47,693 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 00:36:55,188 INFO A user tried to request a break.
+2017-06-07 00:46:44,736 INFO A new student registered.
+2017-06-07 22:21:14,696 INFO the lecture button was started
+2017-06-07 22:22:04,664 INFO A new student registered.
+2017-06-07 22:22:26,951 INFO A user tried to request a break.
+2017-06-07 22:23:13,609 INFO A user tried to request a break.
+2017-06-07 22:23:18,454 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 22:23:22,410 INFO A new student registered.
+2017-06-07 22:23:25,557 INFO A student unregistered.
+2017-06-07 22:23:29,175 INFO A new student registered.
+2017-06-07 22:23:32,050 INFO A student tried to register a second time. Request was denied.
+2017-06-07 22:23:34,905 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 22:27:12,069 INFO the lecture button was started
+2017-06-07 22:27:22,826 INFO the lecture button was ended
+2017-06-07 22:30:06,557 INFO Invalid input.
+2017-06-07 22:30:08,153 INFO the lecture button was started
+2017-06-07 22:30:49,452 INFO A user tried to request a break.
+2017-06-07 22:30:51,009 INFO A new student registered.
+2017-06-07 22:30:52,833 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 22:30:54,925 INFO A user tried to request a break.
+2017-06-07 22:31:00,848 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 22:31:18,651 INFO the lecture button was ended
+2017-06-07 22:33:20,678 INFO the lecture button was started
+2017-06-07 22:37:48,630 INFO Invalid input.
+2017-06-07 22:37:50,022 INFO the lecture button was ended
+2017-06-07 22:38:00,569 INFO the lecture button was started
+2017-06-07 22:38:11,092 INFO the lecture button was ended
+2017-06-07 22:39:24,018 INFO A student tried to start the lecture. Request was denied.
+2017-06-07 22:40:38,756 INFO Invalid input.
+2017-06-07 22:40:40,373 INFO the lecture button was ended
+2017-06-07 22:40:46,945 INFO the lecture button was started
+2017-06-07 22:41:00,954 INFO the lecture button was ended
+2017-06-07 22:41:50,979 INFO the lecture button was started
+2017-06-07 22:41:56,787 INFO A user tried to request a break.
+2017-06-07 22:41:58,363 INFO A user tried to request a break.
+2017-06-07 22:42:05,215 INFO A new student registered.
+2017-06-07 22:42:08,418 INFO A user tried to request a break.
+2017-06-07 22:42:31,891 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 22:42:43,986 INFO the lecture button was ended
+2017-06-07 23:00:05,422 INFO Invalid input.
+2017-06-07 23:02:16,196 INFO Invalid input.
+2017-06-07 23:02:26,155 INFO the lecture button was started
+2017-06-07 23:05:27,845 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 23:05:48,400 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 23:05:57,121 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-07 23:06:05,887 INFO A new student registered.
+2017-06-07 23:06:08,993 INFO A user tried to request a break.

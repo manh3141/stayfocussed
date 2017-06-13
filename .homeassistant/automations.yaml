@@ -33,36 +33,17 @@
   action:
     service: input_boolean.toggle
     entity_id: input_boolean.timerdummy
-     
-# - id: lecturestart
-#   alias: Lecture beginn notification
-#   trigger:
-#     platform: state
-#     entity_id: input_boolean.stopwatch
-#     state: "on"
-#   action:
-#     service: shell_command.start_lecture
+
 
 # Restart Home Assistant when lecture stops to reset the break request count
-#- id: lecturestop
-#  alias: Restart HA when Lecture stops
-#  trigger:
-#    platform: state
-#    entity_id: input_boolean.stopwatch
-#    state: "off"
-#  action:
-#    service: homeassistant.restart
-         
-#- id: breakrequesttelegram
-#  alias: Break request Telegram
-#  trigger:
-#    platform: event
-#    event_type: telegram_command
-#    event_data:
-#      command: '/request_break'
-#  action:
-#    - service: input_boolean.toggle
-#      entity_id: input_boolean.breakrequest
+- id: lecturestop
+  alias: Restart HA when Lecture stops
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "off"
+  action:
+    service: homeassistant.restart
 
 # Send a notification to the Home Assistant Dashboard when break score reaches threshhold    
 - id: sendbreaknotification
@@ -105,3 +86,73 @@
     data:
       title: "Notification"
       message: "It is too dark. Please turn on the lights!"
+      
+# Turn on Philips Hue if lecture starts
+- id: turnonhue
+  alias: Turn on Hue if lecture starts
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "on"    
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        brightness: 200
+        rgb_color: [ 0, 255, 0 ]
+        
+ # Turn off Philips Hue if lecture ends
+- id: turnoffhue
+  alias: Turn off Hue if lecture starts
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "off"    
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.hue_color_lamp_2
+        
+# Traffic light system: Change Hue to green if score < 50
+- id: changehuetogreen
+  alias: Change Hue color to green if score < 50
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 0
+      below: 50
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 0, 255, 0 ]
+        brightness: 200
+        
+# Traffic light system: Change Hue to orange if score > 50 and < 100
+- id: changehuetoorange
+  alias: Change Hue color to orange if score > 50 and < 100
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 50
+      below: 100
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 255, 165, 0 ]
+        brightness: 200
+
+# Traffic light system: Change Hue to green if score > 100
+- id: changehuetored
+  alias: Change Hue color to green if score > 100
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 100
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 255, 0, 0 ]
+        brightness: 200
