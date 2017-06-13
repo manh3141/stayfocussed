@@ -31,14 +31,23 @@
     service: input_boolean.toggle
     entity_id: input_boolean.timerdummy
      
-- id: lecturestart
-  alias: Lecture beginn notification
+# - id: lecturestart
+  # alias: Lecture begin notification
+  # trigger:
+    # platform: state
+    # entity_id: input_boolean.stopwatch
+    # state: "on"
+  # action:
+    # service: shell_command.start_lecture
+
+- id: lecturestop
+  alias: Restart HA when Lecture stops
   trigger:
     platform: state
     entity_id: input_boolean.stopwatch
-    state: "on"
+    state: "off"
   action:
-    service: shell_command.start_lecture
+    service: homeassistant.restart
          
 - id: breakrequesttelegram
   alias: Break request Telegram

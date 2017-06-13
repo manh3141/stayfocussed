@@ -73,7 +73,6 @@ input_boolean:
     
 shell_command:
   start_lecture: 'python3 /home/homeassistant/.homeassistant/TelegramBot_Skript.py'
-  test: touch /tmp/hass-shell-command-test
  
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -87,4 +86,3 @@ mysensors:
   persistence: true
   retain: true
   version: 2.0
-

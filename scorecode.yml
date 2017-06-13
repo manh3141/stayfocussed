@@ -1,0 +1,40 @@
+{% if is_state('input_boolean.stopwatch', 'on') %}
+  {% if states.sensor.hhz_eg125_airquality_a_9_1.state > 400 %}
+    {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60*(1.5)) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count)) + 20 | round | int }}
+  {% else %}
+    {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count)) + 20 | round | int }}
+  {% endif %}
+{% elif is_state('sensor.stopwatch', 'unknown') %}
+  0
+{% else %}
+  {{ states('sensor.stopwatch') }}
+{% endif %}
+        
+{% if is_state('input_boolean.stopwatch', 'on') %}
+  {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count)) | round | int }}
+{% elif is_state('sensor.stopwatch', 'unknown') %}
+  0
+{% else %}
+  {{ states('sensor.stopwatch') }}
+{% endif %}   
+
+
+{% if is_state('input_boolean.stopwatch', 'on') %}
+  {%if states.sensor.hhz_eg125_light_b_10_0.state | int < 200 %}
+    {% if states.sensor.hhz_eg125_airquality_a_9_1.state | int > 200 %} 
+      {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 70) | round | int }}
+    {% else %}
+      {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 20) | round | int }}
+    {% endif %}
+  {% else %}
+    {% if states.sensor.hhz_eg125_airquality_a_9_1.state | int > 200 %} 
+      {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 50) | round | int }}
+    {% else %}
+      {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count)) | round | int }}
+    {% endif %}
+  {% endif %}
+{% elif is_state('sensor.stopwatch', 'unknown') %}
+  0
+{% else %}
+  {{ states('sensor.stopwatch') }}
+{% endif %}
