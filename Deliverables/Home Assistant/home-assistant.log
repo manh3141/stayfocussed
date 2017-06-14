@@ -1,0 +1,35 @@
+2017-06-07 22:43:31 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 22:43:34 WARNING (MainThread) [homeassistant.components.automation.state] 'state' is deprecated. Please rename 'state' to 'to' in your configuration file.
+2017-06-07 22:43:34 WARNING (MainThread) [homeassistant.components.automation.state] 'state' is deprecated. Please rename 'state' to 'to' in your configuration file.
+2017-06-07 22:43:34 WARNING (MainThread) [homeassistant.components.automation.state] 'state' is deprecated. Please rename 'state' to 'to' in your configuration file.
+2017-06-07 22:43:34 WARNING (MainThread) [homeassistant.components.automation.state] 'state' is deprecated. Please rename 'state' to 'to' in your configuration file.
+2017-06-07 22:43:34 WARNING (MainThread) [homeassistant.components.automation.state] 'state' is deprecated. Please rename 'state' to 'to' in your configuration file.
+2017-06-07 22:44:03 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 22:51:45 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 22:52:16 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 22:54:51 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:02:34 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:03:05 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:04:07 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:05:39 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:06:08 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:06:54 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:07:06 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:07:24 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:07:26 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:07:30 WARNING (MainThread) [homeassistant.components.sensor.statistics] mean requires at least one data point
+2017-06-07 23:07:43 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:09:21 ERROR (MainThread) [homeassistant.components.websocket_api] WS 1799147792: Client exceeded max pending messages [2]: 512
+2017-06-07 23:11:48 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:24:46 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/asyncio/selector_events.py", line 582, in _read_ready
+    data = self._sock.recv(self.max_size)
+OSError: [Errno 113] No route to host
+2017-06-07 23:31:59 ERROR (MainThread) [homeassistant.components.websocket_api] WS 1716131952: Client exceeded max pending messages [2]: 512
+2017-06-07 23:40:41 WARNING (MainThread) [homeassistant.helpers.entity] Update for light.hue_color_lamp_3 is already in progress
+2017-06-07 23:44:03 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/asyncio/selector_events.py", line 582, in _read_ready
+    data = self._sock.recv(self.max_size)
+OSError: [Errno 113] No route to host

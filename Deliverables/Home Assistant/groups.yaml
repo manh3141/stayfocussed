@@ -1,0 +1,84 @@
+default_view:
+  view: true
+  entities:
+  - group.weather
+Room_125:
+  name: Raum 125
+  view: true
+  entities:
+  - group.mysensors_125_A
+  - group.mysensors_125_B
+  - group.hue_125
+#Tab for StayFocussed with sensors and the lecturemonitor card
+StayFocussed:
+  name: StayFocussed
+  view: true
+  entities:
+  - group.lecturemonitor
+  - group.sensorsstayfocussed
+Config:
+  view: true
+  icon: mdi:settings
+  entities:
+  - group.systemmonitor
+hue_125:
+  name: Raum 125 Licht
+  entities:
+  - light.hue_color_lamp_1
+  - light.hue_color_lamp_2
+  - light.hue_color_lamp_3
+mysensors_125:
+  name: Raum 125 Sensoren
+  entities:
+  - group.mysensors_125_A
+  - group.mysensors_125_B
+mysensors_125_A:
+  name: Raum 125 Sensoren A
+  entities:
+  - binary_sensor.hhz_eg125_motion_a_7_1
+  - binary_sensor.hhz_eg125_motion_c_1_1
+  - sensor.hhz_eg125_airquality_a_9_1
+  - sensor.hhz_eg125_humidtemp_a_6_0
+  - sensor.hhz_eg125_humidtemp_a_6_1
+  - sensor.hhz_eg125_light_a_11_0
+mysensors_125_B:
+  name: Raum 125 Sensoren B
+  entities:
+  - binary_sensor.hhz_eg125_motion_b_8_1
+  - binary_sensor.hhz_eg125_motion_d_2_1
+  - sensor.hhz_eg125_airquality_b_3_1
+  - sensor.hhz_eg125_humidtemp_b_12_0
+  - sensor.hhz_eg125_humidtemp_b_12_1
+  - sensor.hhz_eg125_light_b_10_0
+sensorsstayfocussed:
+  name: Room 125 sensors
+  entities: 
+  - sensor.hhz_eg125_light_b_10_0
+  - sensor.hhz_eg125_airquality_a_9_1
+  - light.hue_color_lamp_2
+weather:
+  name: Wetter
+  entities:
+  - sensor.weather_temperature
+  - sensor.weather_apparent_temperature
+  - sensor.weather_cloud_coverage
+  - sensor.weather_humidity
+  - sensor.weather_pressure
+  - sensor.weather_wind_speed
+systemmonitor:
+  name: System
+  entities:
+  - sensor.cpu_use
+  - sensor.disk_use_
+  - sensor.disk_free_
+  - sensor.ram_use
+  - sensor.ram_free
+  - sensor.since_last_boot
+#lecture monitor card with switch for lecture start, timer, break score and break request count
+lecturemonitor:
+  name: Lecture status
+  entities:
+    - input_boolean.stopwatch
+    - sensor.stopwatch
+    - sensor.breakscore
+    - sensor.breakrequestcount

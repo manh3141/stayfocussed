@@ -1,0 +1,104 @@
+- platform: darksky
+  api_key: 2b0a14341b4c67db191f708c7d6dea4e
+  name: weather
+  monitored_conditions:
+    - temperature
+    - apparent_temperature
+    - wind_speed
+    - cloud_cover
+    - humidity
+    - pressure
+
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: disk_free
+      arg: /
+    - type: memory_use_percent
+    - type: memory_free
+    - type: processor_use
+    - type: since_last_boot
+    
+- platform: time_date
+  display_options:
+    - 'time'
+
+# counts how often the break request switch has been toggled
+- platform: statistics
+  name: breakrequeststatistics
+  friendly_name: Break requests statistics
+  entity_id: input_boolean.breakrequest
+
+# Timer is started when lecture switch is toggled. Template displays minutes since stopwatch has been started
+- platform: template
+  sensors:
+    stopwatch:
+      friendly_name: "Timer"
+      value_template: >
+        {% if is_state('input_boolean.stopwatch', 'on') %}
+          {{ ((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) | round | int }}
+        {% elif is_state('sensor.stopwatch', 'unknown') %}
+          0
+        {% else %}
+          {{ states('sensor.stopwatch') }}
+        {% endif %}
+      icon_template: mdi:clock
+      unit_of_measurement: 'min'
+      entity_id:
+        - automation.stopwatch_start
+        - automation.stopwatch_update
+        - automation.stopwatch_stop
+# Template calculates score based on time (+1/min), break requests (+5), brightness (+0/+10/+20) and air quality (+0/+25/+50)
+    breakscore:
+      friendly_name: "Break score"
+      value_template: >
+        {% if is_state('input_boolean.stopwatch', 'on') %}
+          {%if states.sensor.hhz_eg125_light_b_10_0.state | int < 200 %}
+            {% if states.sensor.hhz_eg125_airquality_a_9_1.state | int < 600 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 20) | round | int }}
+            {% elif states.sensor.hhz_eg125_airquality_a_9_1.state | int < 1000 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 45) | round | int }}
+            {% else %}
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 70) | round | int }}
+            {% endif %}
+          {% elif states.sensor.hhz_eg125_light_b_10_0.state | int < 600 %}
+            {% if states.sensor.hhz_eg125_airquality_a_9_1.state | int < 600 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 10) | round | int }}
+            {% elif states.sensor.hhz_eg125_airquality_a_9_1.state | int < 1000 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 35) | round | int }}
+            {% else %}
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 60) | round | int }}
+            {% endif %}
+          {% else %}
+            {% if states.sensor.hhz_eg125_airquality_a_9_1.state | int < 600 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count)) | round | int }}
+            {% elif states.sensor.hhz_eg125_airquality_a_9_1.state | int < 1000 %} 
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 25) | round | int }}
+            {% else %}
+              {{ (((now() - states.automation.stopwatch_start.attributes.last_triggered).total_seconds()/60) + (5 * states.sensor.breakrequeststatistics_mean.attributes.count) + 50) | round | int }}
+            {% endif %}
+          {% endif %}
+        {% elif is_state('sensor.stopwatch', 'unknown') %}
+          0
+        {% else %}
+          {{ states('sensor.breakscore') }}
+        {% endif %}
+      icon_template: mdi:gauge
+      entity_id:
+        - automation.stopwatch_start
+        - automation.stopwatch_update
+        - automation.stopwatch_stop
+# every break request toggles the "breakrequest" switch, breakrequeststatistics counts these toggles and displays the value
+    breakrequestcount:
+      friendly_name: Break request count
+      value_template: > 
+        {% if is_state('input_boolean.stopwatch', 'on') %}
+          {{ states.sensor.breakrequeststatistics_mean.attributes.count }}
+        {% elif is_state('sensor.stopwatch', 'unknown') %}
+          0
+        {% else %}
+          {{ states('sensor.breakrequestcount') }}
+        {% endif %}
+
+     

@@ -1,0 +1,158 @@
+# Start timer when lecture has been started
+- id: stopwatchstart
+  alias: Stopwatch start
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "on"
+  action:
+    - service: input_boolean.toggle
+      entity_id: input_boolean.timerdummy
+
+# Stop timer when lecture has been stopped
+- id: stopwatchstop 
+  alias: Stopwatch stop
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: 'off'
+  action:
+    - service: input_boolean.toggle
+      entity_id: input_boolean.timerdummy
+       
+# Update timer every minute
+- id: stopwatchupdate         
+  alias: Stopwatch update
+  trigger:
+    platform: time
+    minutes: '/1'
+  condition:
+    condition: state
+    entity_id: input_boolean.stopwatch
+    state: 'on'
+  action:
+    service: input_boolean.toggle
+    entity_id: input_boolean.timerdummy
+
+
+# Restart Home Assistant when lecture stops to reset the break request count
+- id: lecturestop
+  alias: Restart HA when Lecture stops
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "off"
+  action:
+    service: homeassistant.restart
+
+# Send a notification to the Home Assistant Dashboard when break score reaches threshhold    
+- id: sendbreaknotification
+  alias: Send break notification based on score
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 100
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 150
+  action:
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "Time for a break!"
+      
+# Send a notification to the Home Assistant Dashboard when CO2 value reaches threshhold  
+- id: sendco2notification
+  alias: Send notification to open window based on CO2 in PPM
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.hhz_eg125_airquality_a_9_1
+    above: 900
+  action:
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "CO2 level is too high. Please open the window!"
+
+# Send a notification to the Home Assistant Dashboard when lux value reaches threshhold 
+- id: sendluxnotification
+  alias: Send notification to turn on the lights based on brightness in lux
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.hhz_eg125_light_b_10_0
+    below: 200
+  action:
+    service: persistent_notification.create
+    data:
+      title: "Notification"
+      message: "It is too dark. Please turn on the lights!"
+      
+# Turn on Philips Hue if lecture starts
+- id: turnonhue
+  alias: Turn on Hue if lecture starts
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "on"    
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        brightness: 200
+        rgb_color: [ 0, 255, 0 ]
+        
+ # Turn off Philips Hue if lecture ends
+- id: turnoffhue
+  alias: Turn off Hue if lecture starts
+  trigger:
+    platform: state
+    entity_id: input_boolean.stopwatch
+    state: "off"    
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.hue_color_lamp_2
+        
+# Traffic light system: Change Hue to green if score < 50
+- id: changehuetogreen
+  alias: Change Hue color to green if score < 50
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 0
+      below: 50
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 0, 255, 0 ]
+        brightness: 200
+        
+# Traffic light system: Change Hue to orange if score > 50 and < 100
+- id: changehuetoorange
+  alias: Change Hue color to orange if score > 50 and < 100
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 50
+      below: 100
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 255, 165, 0 ]
+        brightness: 200
+
+# Traffic light system: Change Hue to green if score > 100
+- id: changehuetored
+  alias: Change Hue color to green if score > 100
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.breakscore
+      above: 100
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.hue_color_lamp_2
+        rgb_color: [ 255, 0, 0 ]
+        brightness: 200
