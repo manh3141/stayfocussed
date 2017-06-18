@@ -134,10 +134,11 @@ def handle_updates(updates):
                     toggle_button(info)
                     send_message("break requested", chat)
                     break_requests.append(user)
-                    logger.info("A user tried to request a break.")
+                    logger.info("A user requested a break.")
                 #unknown users are asked to register before they can request a break
                 else:
                     send_message("please register as a student via /register in order to be able to request a break", chat)
+                    logger.info("A user tried to request a break. Request was denied due to missing student status.")
             #handle lecture start request
             elif text == "/start_lecture":
                 #user needs to be a professor in order to successfully start the lecture
