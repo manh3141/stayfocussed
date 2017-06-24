@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## StayFocussed
 
 You can use the [editor on GitHub](https://github.com/jules185/IoT_Hackathon/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
