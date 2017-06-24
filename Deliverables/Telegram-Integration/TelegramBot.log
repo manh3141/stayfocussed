@@ -1,0 +1,907 @@
+2017-06-12 16:48:32,731 INFO A professor started the lecture.
+2017-06-12 16:48:32,731 INFO A professor started the lecture.
+2017-06-12 16:48:35,659 INFO A user tried to requested a break.
+2017-06-12 16:48:35,659 INFO A user tried to requested a break.
+2017-06-12 16:48:39,126 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-12 16:48:39,126 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-12 18:34:58,298 INFO A professor started the lecture.
+2017-06-12 18:34:58,298 INFO A professor started the lecture.
+2017-06-12 18:34:58,298 INFO A professor started the lecture.
+2017-06-12 18:34:58,298 INFO A professor started the lecture.
+2017-06-12 18:34:58,298 INFO A professor started the lecture.
+2017-06-12 18:35:11,812 INFO A professor tried to register as a student. Request was denied.
+2017-06-12 18:35:11,812 INFO A professor tried to register as a student. Request was denied.
+2017-06-12 18:35:11,812 INFO A professor tried to register as a student. Request was denied.
+2017-06-12 18:35:11,812 INFO A professor tried to register as a student. Request was denied.
+2017-06-12 18:35:11,812 INFO A professor tried to register as a student. Request was denied.
+2017-06-12 18:40:36,963 INFO A new student registered.
+2017-06-12 18:40:36,963 INFO A new student registered.
+2017-06-12 18:42:23,889 INFO A user tried to request a break.
+2017-06-12 18:42:31,578 INFO A new student registered.
+2017-06-12 18:42:34,378 INFO A user tried to request a break.
+2017-06-13 08:13:56,673 INFO A professor tried to unregister as a student. Request was denied.
+2017-06-13 08:14:16,004 INFO A user tried to request a break.
+2017-06-13 08:16:02,361 INFO A professor started the lecture.
+2017-06-13 08:19:00,950 INFO A new student registered.
+2017-06-13 08:19:13,110 INFO A user tried to request a break.
+2017-06-13 08:34:24,618 INFO A professor started the lecture.
+2017-06-13 08:34:35,711 INFO A user tried to request a break.
+2017-06-13 08:34:46,096 INFO A professor started the lecture.
+2017-06-13 08:36:08,426 INFO A professor started the lecture.
+2017-06-13 08:47:17,990 INFO A new student registered.
+2017-06-13 08:47:17,990 INFO A new student registered.
+2017-06-13 08:47:17,990 INFO A new student registered.
+2017-06-13 08:47:37,016 INFO A professor started the lecture.
+2017-06-13 08:47:37,016 INFO A professor started the lecture.
+2017-06-13 08:47:37,016 INFO A professor started the lecture.
+2017-06-13 08:49:17,153 INFO A user tried to request a break.
+2017-06-13 08:49:17,153 INFO A user tried to request a break.
+2017-06-13 08:49:17,153 INFO A user tried to request a break.
+2017-06-13 08:49:17,153 INFO A user tried to request a break.
+2017-06-13 08:49:21,225 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 08:49:21,225 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 08:49:21,225 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 08:49:21,225 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 08:51:17,384 INFO A user tried to request a break.
+2017-06-13 08:51:17,384 INFO A user tried to request a break.
+2017-06-13 08:51:17,384 INFO A user tried to request a break.
+2017-06-13 08:51:17,384 INFO A user tried to request a break.
+2017-06-13 08:51:17,384 INFO A user tried to request a break.
+2017-06-13 08:51:20,262 INFO A user tried to request a break.
+2017-06-13 08:51:20,262 INFO A user tried to request a break.
+2017-06-13 08:51:20,262 INFO A user tried to request a break.
+2017-06-13 08:51:20,262 INFO A user tried to request a break.
+2017-06-13 08:51:20,262 INFO A user tried to request a break.
+2017-06-13 08:51:23,043 INFO A user tried to request a break.
+2017-06-13 08:51:23,043 INFO A user tried to request a break.
+2017-06-13 08:51:23,043 INFO A user tried to request a break.
+2017-06-13 08:51:23,043 INFO A user tried to request a break.
+2017-06-13 08:51:23,043 INFO A user tried to request a break.
+2017-06-13 08:51:27,191 INFO A user tried to request a break.
+2017-06-13 08:51:27,191 INFO A user tried to request a break.
+2017-06-13 08:51:27,191 INFO A user tried to request a break.
+2017-06-13 08:51:27,191 INFO A user tried to request a break.
+2017-06-13 08:51:27,191 INFO A user tried to request a break.
+2017-06-13 08:51:28,759 INFO A user tried to request a break.
+2017-06-13 08:51:28,759 INFO A user tried to request a break.
+2017-06-13 08:51:28,759 INFO A user tried to request a break.
+2017-06-13 08:51:28,759 INFO A user tried to request a break.
+2017-06-13 08:51:28,759 INFO A user tried to request a break.
+2017-06-13 08:51:31,431 INFO A new student registered.
+2017-06-13 08:51:31,431 INFO A new student registered.
+2017-06-13 08:51:31,431 INFO A new student registered.
+2017-06-13 08:51:31,431 INFO A new student registered.
+2017-06-13 08:51:31,431 INFO A new student registered.
+2017-06-13 08:51:32,820 INFO A user tried to request a break.
+2017-06-13 08:51:32,820 INFO A user tried to request a break.
+2017-06-13 08:51:32,820 INFO A user tried to request a break.
+2017-06-13 08:51:32,820 INFO A user tried to request a break.
+2017-06-13 08:51:32,820 INFO A user tried to request a break.
+2017-06-13 08:51:34,194 INFO A user tried to request a break.
+2017-06-13 08:51:34,194 INFO A user tried to request a break.
+2017-06-13 08:51:34,194 INFO A user tried to request a break.
+2017-06-13 08:51:34,194 INFO A user tried to request a break.
+2017-06-13 08:51:34,194 INFO A user tried to request a break.
+2017-06-13 08:51:35,577 INFO A user tried to request a break.
+2017-06-13 08:51:35,577 INFO A user tried to request a break.
+2017-06-13 08:51:35,577 INFO A user tried to request a break.
+2017-06-13 08:51:35,577 INFO A user tried to request a break.
+2017-06-13 08:51:35,577 INFO A user tried to request a break.
+2017-06-13 08:51:36,996 INFO A user tried to request a break.
+2017-06-13 08:51:36,996 INFO A user tried to request a break.
+2017-06-13 08:51:36,996 INFO A user tried to request a break.
+2017-06-13 08:51:36,996 INFO A user tried to request a break.
+2017-06-13 08:51:36,996 INFO A user tried to request a break.
+2017-06-13 08:51:37,204 INFO A user tried to request a break.
+2017-06-13 08:51:37,204 INFO A user tried to request a break.
+2017-06-13 08:51:37,204 INFO A user tried to request a break.
+2017-06-13 08:51:37,204 INFO A user tried to request a break.
+2017-06-13 08:51:37,204 INFO A user tried to request a break.
+2017-06-13 08:51:38,635 INFO A user tried to request a break.
+2017-06-13 08:51:38,635 INFO A user tried to request a break.
+2017-06-13 08:51:38,635 INFO A user tried to request a break.
+2017-06-13 08:51:38,635 INFO A user tried to request a break.
+2017-06-13 08:51:38,635 INFO A user tried to request a break.
+2017-06-13 08:51:40,011 INFO A user tried to request a break.
+2017-06-13 08:51:40,011 INFO A user tried to request a break.
+2017-06-13 08:51:40,011 INFO A user tried to request a break.
+2017-06-13 08:51:40,011 INFO A user tried to request a break.
+2017-06-13 08:51:40,011 INFO A user tried to request a break.
+2017-06-13 08:51:40,224 INFO A user tried to request a break.
+2017-06-13 08:51:40,224 INFO A user tried to request a break.
+2017-06-13 08:51:40,224 INFO A user tried to request a break.
+2017-06-13 08:51:40,224 INFO A user tried to request a break.
+2017-06-13 08:51:40,224 INFO A user tried to request a break.
+2017-06-13 08:51:44,087 INFO A user tried to request a break.
+2017-06-13 08:51:44,087 INFO A user tried to request a break.
+2017-06-13 08:51:44,087 INFO A user tried to request a break.
+2017-06-13 08:51:44,087 INFO A user tried to request a break.
+2017-06-13 08:51:44,087 INFO A user tried to request a break.
+2017-06-13 08:51:48,647 INFO A user tried to request a break.
+2017-06-13 08:51:48,647 INFO A user tried to request a break.
+2017-06-13 08:51:48,647 INFO A user tried to request a break.
+2017-06-13 08:51:48,647 INFO A user tried to request a break.
+2017-06-13 08:51:48,647 INFO A user tried to request a break.
+2017-06-13 08:51:54,720 INFO A user tried to request a break.
+2017-06-13 08:51:54,720 INFO A user tried to request a break.
+2017-06-13 08:51:54,720 INFO A user tried to request a break.
+2017-06-13 08:51:54,720 INFO A user tried to request a break.
+2017-06-13 08:51:54,720 INFO A user tried to request a break.
+2017-06-13 08:51:58,732 INFO A user tried to request a break.
+2017-06-13 08:51:58,732 INFO A user tried to request a break.
+2017-06-13 08:51:58,732 INFO A user tried to request a break.
+2017-06-13 08:51:58,732 INFO A user tried to request a break.
+2017-06-13 08:51:58,732 INFO A user tried to request a break.
+2017-06-13 08:52:00,786 INFO A user tried to request a break.
+2017-06-13 08:52:00,786 INFO A user tried to request a break.
+2017-06-13 08:52:00,786 INFO A user tried to request a break.
+2017-06-13 08:52:00,786 INFO A user tried to request a break.
+2017-06-13 08:52:00,786 INFO A user tried to request a break.
+2017-06-13 08:52:03,505 INFO A user tried to request a break.
+2017-06-13 08:52:03,505 INFO A user tried to request a break.
+2017-06-13 08:52:03,505 INFO A user tried to request a break.
+2017-06-13 08:52:03,505 INFO A user tried to request a break.
+2017-06-13 08:52:03,505 INFO A user tried to request a break.
+2017-06-13 08:53:00,014 INFO A professor started the lecture.
+2017-06-13 08:53:00,014 INFO A professor started the lecture.
+2017-06-13 08:53:00,014 INFO A professor started the lecture.
+2017-06-13 08:53:00,014 INFO A professor started the lecture.
+2017-06-13 08:53:00,014 INFO A professor started the lecture.
+2017-06-13 08:53:10,711 INFO A professor started the lecture.
+2017-06-13 08:53:10,711 INFO A professor started the lecture.
+2017-06-13 08:53:10,711 INFO A professor started the lecture.
+2017-06-13 08:53:10,711 INFO A professor started the lecture.
+2017-06-13 08:53:10,711 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:57:49,059 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:02,551 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:07,238 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 08:58:13,193 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:21,753 INFO A professor started the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:00:28,179 INFO A professor stopped the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:14,560 INFO A professor started the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:01:27,063 INFO A professor stopped the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:44,821 INFO A professor started the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:50,248 INFO A professor stopped the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:02:54,986 INFO A professor started the lecture.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:11,335 INFO A user tried to request a break.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:03:57,424 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:03,101 INFO A professor started the lecture.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:08,662 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:23,670 INFO A new student registered.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:04:25,589 INFO A user tried to request a break.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:20,621 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:31,485 INFO A professor started the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:40,632 INFO A professor stopped the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:08:45,031 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:50,990 INFO A professor started the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:09:58,759 INFO A professor stopped the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:02,404 INFO A professor started the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:11,607 INFO A professor stopped the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:18,840 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:32,034 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:10:59,476 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:07,501 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:11:28,521 INFO A professor started the lecture.
+2017-06-13 09:23:23,027 INFO A professor started the lecture.
+2017-06-13 09:23:23,027 INFO A professor started the lecture.
+2017-06-13 09:23:23,215 INFO A professor started the lecture.
+2017-06-13 09:23:23,215 INFO A professor started the lecture.
+2017-06-13 09:23:23,619 INFO A user tried to request a break.
+2017-06-13 09:23:23,619 INFO A user tried to request a break.
+2017-06-13 09:23:57,348 INFO A professor started the lecture.
+2017-06-13 09:23:57,348 INFO A professor started the lecture.
+2017-06-13 09:24:06,429 INFO A professor stopped the lecture.
+2017-06-13 09:24:06,429 INFO A professor stopped the lecture.
+2017-06-13 09:24:22,555 INFO A professor started the lecture.
+2017-06-13 09:24:22,555 INFO A professor started the lecture.
+2017-06-13 09:24:37,846 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:24:37,846 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:25:02,152 INFO A professor stopped the lecture.
+2017-06-13 09:25:02,152 INFO A professor stopped the lecture.
+2017-06-13 09:25:05,480 INFO A professor started the lecture.
+2017-06-13 09:25:05,480 INFO A professor started the lecture.
+2017-06-13 09:25:39,411 INFO A professor started the lecture.
+2017-06-13 09:25:39,411 INFO A professor started the lecture.
+2017-06-13 09:28:50,475 INFO A user tried to request a break.
+2017-06-13 09:29:00,241 INFO A professor started the lecture.
+2017-06-13 09:29:10,698 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:29:17,188 INFO A professor stopped the lecture.
+2017-06-13 09:29:18,896 INFO A new student registered.
+2017-06-13 09:29:21,789 INFO A user tried to request a break.
+2017-06-13 09:29:26,157 INFO A professor started the lecture.
+2017-06-13 09:29:35,889 INFO A student tried to register a second time. Request was denied.
+2017-06-13 09:29:39,420 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:29:42,444 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:30:11,724 INFO A professor stopped the lecture.
+2017-06-13 09:30:19,314 INFO A professor started the lecture.
+2017-06-13 09:30:29,184 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:31:32,633 INFO A professor started the lecture.
+2017-06-13 09:31:38,294 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:31:56,747 INFO A professor started the lecture.
+2017-06-13 09:31:56,747 INFO A professor started the lecture.
+2017-06-13 09:31:56,747 INFO A professor started the lecture.
+2017-06-13 09:33:13,101 INFO A professor stopped the lecture.
+2017-06-13 09:33:13,101 INFO A professor stopped the lecture.
+2017-06-13 09:33:13,101 INFO A professor stopped the lecture.
+2017-06-13 09:35:36,940 INFO A professor started the lecture.
+2017-06-13 09:35:40,377 INFO A user tried to request a break.
+2017-06-13 09:35:46,443 INFO A professor stopped the lecture.
+2017-06-13 09:35:50,583 INFO A professor stopped the lecture.
+2017-06-13 09:35:54,786 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:40:54,266 INFO A professor started the lecture.
+2017-06-13 09:40:54,266 INFO A professor started the lecture.
+2017-06-13 09:40:59,701 INFO A user tried to request a break.
+2017-06-13 09:40:59,701 INFO A user tried to request a break.
+2017-06-13 09:41:04,517 INFO A professor stopped the lecture.
+2017-06-13 09:41:04,517 INFO A professor stopped the lecture.
+2017-06-13 09:41:08,325 INFO A professor started the lecture.
+2017-06-13 09:41:08,325 INFO A professor started the lecture.
+2017-06-13 09:50:46,857 INFO A professor started the lecture.
+2017-06-13 09:50:46,857 INFO A professor started the lecture.
+2017-06-13 09:50:46,857 INFO A professor started the lecture.
+2017-06-13 09:52:58,161 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 09:52:58,161 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 09:52:58,161 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 09:52:58,161 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 09:56:50,922 INFO A user tried to request a break.
+2017-06-13 09:56:50,922 INFO A user tried to request a break.
+2017-06-13 09:56:50,922 INFO A user tried to request a break.
+2017-06-13 09:56:50,922 INFO A user tried to request a break.
+2017-06-13 09:56:50,922 INFO A user tried to request a break.
+2017-06-13 09:56:55,770 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:56:55,770 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:56:55,770 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:56:55,770 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:56:55,770 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:57:01,455 INFO A professor started the lecture.
+2017-06-13 09:57:01,455 INFO A professor started the lecture.
+2017-06-13 09:57:01,455 INFO A professor started the lecture.
+2017-06-13 09:57:01,455 INFO A professor started the lecture.
+2017-06-13 09:57:01,455 INFO A professor started the lecture.
+2017-06-13 09:57:06,945 INFO A user tried to request a break.
+2017-06-13 09:57:06,945 INFO A user tried to request a break.
+2017-06-13 09:57:06,945 INFO A user tried to request a break.
+2017-06-13 09:57:06,945 INFO A user tried to request a break.
+2017-06-13 09:57:06,945 INFO A user tried to request a break.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:02,466 INFO A professor started the lecture.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:08,359 INFO A user tried to request a break.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:11,022 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:14,715 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 09:59:47,267 INFO A professor stopped the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:00:08,017 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:13:56,396 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:01,714 INFO A professor started the lecture.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:10,562 INFO A user tried to request a break.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:12,739 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:14,738 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:17,709 INFO A professor started the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:20,836 INFO A professor stopped the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:14:46,450 INFO A professor started the lecture.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:05,752 INFO A user tried to request a break.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:15:07,440 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:13,442 INFO A new student registered.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:33,195 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:43,744 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:47,591 INFO A professor stopped the lecture.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:21:52,811 INFO A user tried to request a break.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:03,996 INFO A professor started the lecture.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:30,290 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:39,087 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:22:42,498 INFO A professor stopped the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:17,838 INFO A professor started the lecture.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:23:21,325 INFO A user tried to request a break.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,048 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,420 INFO A professor stopped the lecture.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:38:45,661 INFO A user tried to request a break.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:02,342 INFO A professor started the lecture.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:07,689 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:13,452 INFO A professor stopped the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:54,143 INFO A professor started the lecture.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:39:58,861 INFO A user tried to request a break.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 10:40:02,651 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:10,960 INFO A professor tried to register as a student. Request was denied.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:23:17,028 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 11:31:04,820 INFO A professor started the lecture.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:05:57,938 INFO A student tried to register a second time. Request was denied.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:48:06,634 INFO A new student registered.
+2017-06-13 12:55:32,506 INFO A new student registered.
+2017-06-13 12:55:32,506 INFO A new student registered.
+2017-06-13 13:28:50,096 INFO A user tried to request a break.
+2017-06-13 13:29:58,588 INFO A professor started the lecture.
+2017-06-13 13:30:09,646 INFO A user tried to request a break.
+2017-06-13 13:31:02,259 INFO A new student registered.
+2017-06-13 13:31:40,053 INFO A new student registered.
+2017-06-13 13:32:38,280 INFO A professor stopped the lecture.
+2017-06-13 13:40:36,450 INFO A professor started the lecture.
+2017-06-13 13:40:45,035 INFO A new student registered.
+2017-06-13 13:47:45,297 INFO A user tried to request a break.
+2017-06-13 13:47:48,675 INFO A new student registered.
+2017-06-13 13:47:54,288 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 13:48:23,469 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 14:39:09,431 INFO A user tried to request a break.
+2017-06-13 14:39:09,431 INFO A user tried to request a break.
+2017-06-13 14:42:28,969 INFO A user tried to request a break.
+2017-06-13 14:42:35,547 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 14:46:34,437 INFO A user tried to request a break.
+2017-06-13 14:46:48,338 INFO A student unregistered.
+2017-06-13 14:46:53,832 INFO A student unregistered.
+2017-06-13 14:47:04,923 INFO A new student registered.
+2017-06-13 14:47:08,657 INFO A student unregistered.
+2017-06-13 14:50:29,750 INFO A student unregistered.
+2017-06-13 14:50:35,274 INFO A student unregistered.
+2017-06-13 14:50:59,728 INFO A student tried to register a second time. Request was denied.
+2017-06-13 14:51:02,807 INFO A user tried to request a break. Request was denied due to existing request.
+2017-06-13 14:51:15,509 INFO A professor stopped the lecture.
+2017-06-13 14:52:19,729 INFO A student unregistered.
+2017-06-13 15:11:40,787 INFO the lecture button was toggled
+2017-06-13 15:12:02,861 INFO A new student registered.
+2017-06-13 15:12:05,992 INFO A user tried to request a break.
+2017-06-13 15:15:03,104 INFO the lecture button was toggled
+2017-06-13 15:15:09,147 INFO A user tried to request a break.
+2017-06-13 15:15:12,409 INFO A new student registered.
+2017-06-13 15:15:17,444 INFO A professor stopped the lecture.
+2017-06-13 15:16:18,775 INFO A professor started the lecture.
+2017-06-13 15:16:20,139 INFO the lecture button was toggled
+2017-06-13 15:17:42,328 INFO the lecture button was toggled
+2017-06-13 15:18:03,183 INFO the lecture button was toggled
+2017-06-13 15:18:04,950 INFO Invalid input.
+2017-06-13 15:20:00,904 INFO A user tried to request a break.
+2017-06-13 15:20:03,935 INFO A professor started the lecture.
+2017-06-13 15:21:06,796 INFO the lecture button was toggled
+2017-06-13 15:21:33,067 INFO the lecture button was toggled
+2017-06-13 15:21:40,395 INFO A new student registered.
+2017-06-13 15:21:51,974 INFO the lecture button was toggled
+2017-06-13 15:22:07,739 INFO A professor started the lecture.
+2017-06-13 15:22:09,124 INFO the lecture button was toggled
