@@ -8,4 +8,4 @@ Additionally, our goal was to build a service based on our solution. Therefore, 
 
 For more details see our [Project Wiki](https://github.com/jules185/IoT_Hackathon/wiki).
 
-![mockup](https://user-images.githubusercontent.com/8709386/27508028-3f221dda-58dd-11e7-8648-593f592cf18c.PNG)
+![mockup](https://github.com/jules185/IoT_Hackathon/blob/master/Deliverables/Documentation/Service%20Design/Overview_Mockup.PNG)
